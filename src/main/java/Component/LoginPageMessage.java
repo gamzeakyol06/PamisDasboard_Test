@@ -28,7 +28,7 @@ public class LoginPageMessage {
     public final String Content_ErrorMinUsername = "The Email field must be at least 3 characters";
     public final String Content_ErrorMinPassword = "The Password field must be at least 4 characters";
     public final String Content_SuccessLogin = "Welcome";
-    public final String Content_FailLogin = "Username  password is not correct.";
+    public final String Content_FailLogin = "Username password is not correct.";
 
     public String EmptyUsername() {
         String message = driver.findElement (emptyusername).getText ( );

@@ -25,57 +25,17 @@ td,th {border:1px solid #009;padding:.25em .5em}
 <body>
 <table cellspacing="0" cellpadding="0" class="testOverview">
 <tr><th>Test</th><th>Methods<br/>Passed</th><th>Scenarios<br/>Passed</th><th># skipped</th><th># failed</th><th>Total<br/>Time</th><th>Included<br/>Groups</th><th>Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em"><a href="#t1">PamisUI_Test</a></td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi_attn">9</td><td class="numi">118.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t1">PamisDasboardUI_Test</a></td><td class="numi">5</td><td class="numi">5</td><td class="numi">0</td><td class="numi_attn">5</td><td class="numi">118.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="methodOverview" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr id="t1"><th colspan="5">PamisUI_Test &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="9">Test.LoginPageTest</td><td><a href="#m1"><b>EmptyPassword</b>  ("Empty Password")</a></td><td class="numi">1</td><td>1679666710156</td><td class="numi">134</td></tr><tr class="failedodd"><td><a href="#m2"><b>EmptyUsername</b>  ("Empty Username")</a></td><td class="numi">1</td><td>1679666714240</td><td class="numi">3129</td></tr><tr class="failedodd"><td><a href="#m3"><b>InvalidPassword</b>  ("Invalid Password")</a></td><td class="numi">1</td><td>1679666721207</td><td class="numi">12235</td></tr><tr class="failedodd"><td><a href="#m4"><b>InvalidUsername</b>  ("Invalid Username")</a></td><td class="numi">1</td><td>1679666737019</td><td class="numi">12316</td></tr><tr class="failedodd"><td><a href="#m5"><b>LockedAfterWrongCredentials3Times</b>  ("Locked After Wrong Credentials 3 Times")</a></td><td class="numi">1</td><td>1679666753061</td><td class="numi">36838</td></tr><tr class="failedodd"><td><a href="#m6"><b>MinimumPassword</b>  ("Minimum Password")</a></td><td class="numi">1</td><td>1679666793408</td><td class="numi">134</td></tr><tr class="failedodd"><td><a href="#m7"><b>MinimumUsername</b>  ("Minimum Username")</a></td><td class="numi">1</td><td>1679666797374</td><td class="numi">121</td></tr><tr class="failedodd"><td><a href="#m8"><b>SuccessLogin</b>  ("Success Login")</a></td><td class="numi">1</td><td>1679666806173</td><td class="numi">9246</td></tr><tr class="failedodd"><td><a href="#m9"><b>logoutbacklogin</b>  ("after logout back login")</a></td><td class="numi">1</td><td>1679666818966</td><td class="numi">3231</td></tr>
-<tr><th colspan="5">PamisUI_Test &#8212; passed</th></tr>
-<tr class="passedodd"><td>Test.LoginPageTest</td><td><a href="#m10"><b>PasswordMasked</b>  ("Password Masked")</a></td><td class="numi">1</td><td>1679666801057</td><td class="numi">40</td></tr>
+<tr id="t1"><th colspan="5">PamisDasboardUI_Test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="5">Test.LoginPageTest</td><td><a href="#m1"><b>InvalidPassword</b>  ("Invalid Password")</a></td><td class="numi">1</td><td>1681892499564</td><td class="numi">12226</td></tr><tr class="failedodd"><td><a href="#m2"><b>InvalidUsername</b>  ("Invalid Username")</a></td><td class="numi">1</td><td>1681892514912</td><td class="numi">12238</td></tr><tr class="failedodd"><td><a href="#m3"><b>LockedAfterWrongCredentials3Times</b>  ("Locked After Wrong Credentials 3 Times")</a></td><td class="numi">1</td><td>1681892530228</td><td class="numi">36772</td></tr><tr class="failedodd"><td><a href="#m4"><b>SuccessLogin</b>  ("Success Login")</a></td><td class="numi">1</td><td>1681892579668</td><td class="numi">9258</td></tr><tr class="failedodd"><td><a href="#m5"><b>logoutbacklogin</b>  ("after logout back login")</a></td><td class="numi">1</td><td>1681892592010</td><td class="numi">11226</td></tr>
+<tr><th colspan="5">PamisDasboardUI_Test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="5">Test.LoginPageTest</td><td><a href="#m6"><b>EmptyPassword</b>  ("Empty Password")</a></td><td class="numi">1</td><td>1681892490110</td><td class="numi">124</td></tr><tr class="passedodd"><td><a href="#m7"><b>EmptyUsername</b>  ("Empty Username")</a></td><td class="numi">1</td><td>1681892493393</td><td class="numi">3109</td></tr><tr class="passedodd"><td><a href="#m8"><b>MinimumPassword</b>  ("Minimum Password")</a></td><td class="numi">1</td><td>1681892570015</td><td class="numi">138</td></tr><tr class="passedodd"><td><a href="#m9"><b>MinimumUsername</b>  ("Minimum Username")</a></td><td class="numi">1</td><td>1681892573265</td><td class="numi">126</td></tr><tr class="passedodd"><td><a href="#m10"><b>PasswordMasked</b>  ("Password Masked")</a></td><td class="numi">1</td><td>1681892576525</td><td class="numi">34</td></tr>
 </table>
-<h1>PamisUI_Test</h1>
-<h2 id="m1">Test.LoginPageTest:MinimumPassword</h2>
-<div>
-<div class="stacktrace">java.lang.AssertionError: Minumum Password Check is Fail
-	at Test.LoginPageTest.MinimumPassword(LoginPageTest.java:134)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-... Removed 25 stack frames</div>
-</div>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">Test.LoginPageTest:LockedAfterWrongCredentials3Times</h2>
-<div>
-<div class="stacktrace">java.lang.AssertionError: Account Locked
-	at Test.LoginPageTest.LockedAfterWrongCredentials3Times(LoginPageTest.java:233)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-... Removed 25 stack frames</div>
-</div>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">Test.LoginPageTest:EmptyUsername</h2>
-<div>
-<div class="stacktrace">java.lang.AssertionError: Empty Username Check is Fail
-	at Test.LoginPageTest.EmptyUsername(LoginPageTest.java:40)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-... Removed 25 stack frames</div>
-</div>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m4">Test.LoginPageTest:SuccessLogin</h2>
-<div>
-<div class="stacktrace">java.lang.AssertionError: Trying Success Login is Fail
-	at Test.LoginPageTest.SuccessLogin(LoginPageTest.java:205)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-... Removed 25 stack frames</div>
-</div>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m5">Test.LoginPageTest:InvalidPassword</h2>
+<h1>PamisDasboardUI_Test</h1>
+<h2 id="m1">Test.LoginPageTest:InvalidPassword</h2>
 <div>
 <div class="stacktrace">java.lang.AssertionError: Invalid Password Check is Fail
 	at Test.LoginPageTest.InvalidPassword(LoginPageTest.java:98)
@@ -85,7 +45,7 @@ td,th {border:1px solid #009;padding:.25em .5em}
 ... Removed 25 stack frames</div>
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m6">Test.LoginPageTest:InvalidUsername</h2>
+<h2 id="m2">Test.LoginPageTest:InvalidUsername</h2>
 <div>
 <div class="stacktrace">java.lang.AssertionError: Invalid Username Check is Fail
 	at Test.LoginPageTest.InvalidUsername(LoginPageTest.java:77)
@@ -95,36 +55,44 @@ td,th {border:1px solid #009;padding:.25em .5em}
 ... Removed 25 stack frames</div>
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m7">Test.LoginPageTest:EmptyPassword</h2>
-<div>
-<div class="stacktrace">java.lang.AssertionError: Empty Password Check is Fail
-	at Test.LoginPageTest.EmptyPassword(LoginPageTest.java:56)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-... Removed 25 stack frames</div>
-</div>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m8">Test.LoginPageTest:MinimumUsername</h2>
-<div>
-<div class="stacktrace">java.lang.AssertionError: Minimum Username Check is Fail
-	at Test.LoginPageTest.MinimumUsername(LoginPageTest.java:116)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-... Removed 25 stack frames</div>
-</div>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m9">Test.LoginPageTest:logoutbacklogin</h2>
+<h2 id="m3">Test.LoginPageTest:logoutbacklogin</h2>
 <div>
 <div class="stacktrace">java.lang.AssertionError: Checking Login page after logout is Fail
-	at Test.LoginPageTest.logoutbacklogin(LoginPageTest.java:183)
+	at Test.LoginPageTest.logoutbacklogin(LoginPageTest.java:185)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 ... Removed 25 stack frames</div>
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m10">Test.LoginPageTest:PasswordMasked</h2>
+<h2 id="m4">Test.LoginPageTest:SuccessLogin</h2>
+<div>
+<div class="stacktrace">java.lang.AssertionError: Trying Success Login is Fail
+	at Test.LoginPageTest.SuccessLogin(LoginPageTest.java:207)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 25 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">Test.LoginPageTest:LockedAfterWrongCredentials3Times</h2>
+<div>
+<div class="stacktrace">java.lang.AssertionError: Account Locked Test i Fail
+	at Test.LoginPageTest.LockedAfterWrongCredentials3Times(LoginPageTest.java:236)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 25 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">Test.LoginPageTest:MinimumPassword</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">Test.LoginPageTest:EmptyUsername</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">Test.LoginPageTest:PasswordMasked</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">Test.LoginPageTest:EmptyPassword</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">Test.LoginPageTest:MinimumUsername</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>
