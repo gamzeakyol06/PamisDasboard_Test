@@ -43,11 +43,7 @@ public class Base {
         //chromeOptions.addArguments("--no-sandbox");
         chromeOptions.addArguments("--remote-allow-origins=*");
 */
-
-        driver = new ChromeDriver(chromeOptions);
-        driver.manage().window().maximize();
        // wait = new WebDriverWait(driver, 3000);
-
         // For jenkins server github
 /*          ChromeOptions chromeOptions = new ChromeOptions();
             chromeOptions.setCapability("browserName", "chrome");
