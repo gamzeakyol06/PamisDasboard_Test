@@ -17,8 +17,8 @@ public class Base {
 
 
     public void beforemethod() {
-  /*      System.setProperty("webdriver.chrome.driver", "src/main/driver/chromedriver.exe");
-        System.out.println(System.getProperty("webdriver.chrome.driver"));*/
+        //System.setProperty("webdriver.chrome.driver", "src/main/driver/chromedriver.exe");
+        //System.out.println(System.getProperty("webdriver.chrome.driver"));
 
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.setCapability("browserName","chrome");

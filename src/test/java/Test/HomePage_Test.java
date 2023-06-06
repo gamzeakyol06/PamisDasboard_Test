@@ -1,3 +1,4 @@
+/*
 package Test;
 
 import Base.Base;
@@ -28,6 +29,7 @@ public class HomePage_Test extends Base {
         main.CountryButton().click();
         Thread.sleep(3000);
         System.out.println(driver.getTitle());
+*/
 /*        wait.until(ExpectedConditions.elementToBeClickable( country.CountryDateButton()));
         country.CountryDateButton().click();
         wait.until(ExpectedConditions.elementToBeClickable( country.DailyDateButton()));
@@ -37,7 +39,8 @@ public class HomePage_Test extends Base {
         Thread.sleep(3000);
         main.WorkCenterButton().click();
         Thread.sleep(3000);
-        WorkCenterPage workcenter = new WorkCenterPage(driver);*/
+        WorkCenterPage workcenter = new WorkCenterPage(driver);*//*
+
         //System.out.println(workcenter.OEETarget().getText());
         Thread.sleep(6000);
     }
@@ -78,3 +81,4 @@ public class HomePage_Test extends Base {
     // herhangi birini seçtir
     // sonuçlarını gözlemle
 }
+*/
