@@ -17,18 +17,36 @@ public class Base {
 
 
     public void beforemethod() {
-        System.setProperty("webdriver.chrome.driver", "src/main/driver/chromedriver.exe");
+  /*      System.setProperty("webdriver.chrome.driver", "src/main/driver/chromedriver.exe");
+        System.out.println(System.getProperty("webdriver.chrome.driver"));*/
+
+        ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.setCapability("browserName","chrome");
+        chromeOptions.setCapability("platformName","LINUX");
+        chromeOptions.addArguments("start-maximized");
+        chromeOptions.addArguments("--headless");
+        chromeOptions.addArguments("--no-sandbox");
+        chromeOptions.addArguments("--remote-allow-origins=*");
+
+        driver = new ChromeDriver(chromeOptions);
+        System.setProperty("webdriver.chrome.driver","/src/main/driver/chromedriver.exe");
         System.out.println(System.getProperty("webdriver.chrome.driver"));
 
+        driver.manage().deleteAllCookies();
+        driver.manage().window().maximize();
+        System.out.println("hello git");
+
+/*
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("start-maximized");
         //chromeOptions.addArguments("--headless");
         //chromeOptions.addArguments("--no-sandbox");
         chromeOptions.addArguments("--remote-allow-origins=*");
+*/
 
         driver = new ChromeDriver(chromeOptions);
         driver.manage().window().maximize();
-        wait = new WebDriverWait(driver, 3000);
+       // wait = new WebDriverWait(driver, 3000);
 
         // For jenkins server github
 /*          ChromeOptions chromeOptions = new ChromeOptions();
