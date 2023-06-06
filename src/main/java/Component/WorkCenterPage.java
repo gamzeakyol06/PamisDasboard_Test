@@ -4,10 +4,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WorkCenterPage {
     WebDriver driver;
-    public WorkCenterPage(WebDriver driver){
+    public WorkCenterPage(WebDriver driver,WebDriverWait wait){
         this.driver = driver;
         PageFactory.initElements(this.driver, this);
     }
@@ -30,22 +31,21 @@ public class WorkCenterPage {
     By lastyeardatebutton = By.xpath("//option[contains(text(),'Last Year')]");
     public WebElement LastyearDateButton() {return driver.findElement(lastyeardatebutton);}
 
-    // Site
-    By productionvalue = By.xpath("");
+    By productionvalue = By.xpath("//h2[@id='Production_value']");
     public WebElement Productionvalue() {return driver.findElement(productionvalue);}
-    By  defectvalue= By.xpath("");
+    By  defectvalue= By.xpath("//h2[@id='Defect_value']");
     public WebElement DefectValue() {return driver.findElement(defectvalue);}
-    By ppmvalue = By.xpath("");
+    By ppmvalue = By.xpath("//h2[@id='PPM_value']");
     public WebElement PPMValue () {return driver.findElement(ppmvalue);}
-    By breakdownratevalue = By.xpath("");
+    By breakdownratevalue = By.xpath("//h2[@id='Breakdown Rate_value']");
     public WebElement BreakDownRateValue() {return driver.findElement(breakdownratevalue);}
-    By oeevalue = By.xpath("");
+    By oeevalue = By.xpath("//h2[@id='OEE_value']");
     public WebElement OEEValue () {return driver.findElement(oeevalue);}
-    By availabilityvalue = By.xpath("");
+    By availabilityvalue = By.xpath("//h2[@id='Availability_value']");
     public WebElement AvailabilityValue() {return driver.findElement(availabilityvalue);}
-    By performancevalue = By.xpath("");
+    By performancevalue = By.xpath("//h2[@id='Performance_value']");
     public WebElement PerformanceValue() {return driver.findElement(performancevalue);}
-    By qualityvalue = By.xpath("");
+    By qualityvalue = By.xpath("//h2[@id='Quality_value']");
     public WebElement QualityValue() {return driver.findElement(qualityvalue);}
 
     By oeetarget = By.xpath("");

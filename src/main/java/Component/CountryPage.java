@@ -4,10 +4,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class CountryPage {
     WebDriver driver;
-    public CountryPage(WebDriver driver){
+    public CountryPage(WebDriver driver, WebDriverWait wait){
         this.driver = driver;
         PageFactory.initElements(this.driver, this);
     }
@@ -31,21 +32,21 @@ public class CountryPage {
     public WebElement LastyearDateButton() {return driver.findElement(lastyeardatebutton);}
 
     // Site
-    By productionvalue = By.xpath("");
+    By productionvalue = By.xpath("//h2[@id='Production_value']");
     public WebElement Productionvalue() {return driver.findElement(productionvalue);}
-    By  defectvalue= By.xpath("");
+    By  defectvalue= By.xpath("//h2[@id='Defect_value']");
     public WebElement DefectValue() {return driver.findElement(defectvalue);}
-    By ppmvalue = By.xpath("");
+    By ppmvalue = By.xpath("//h2[@id='PPM_value']");
     public WebElement PPMValue () {return driver.findElement(ppmvalue);}
-    By breakdownratevalue = By.xpath("");
+    By breakdownratevalue = By.xpath("//h2[@id='Breakdown Rate_value']");
     public WebElement BreakDownRateValue() {return driver.findElement(breakdownratevalue);}
-    By oeevalue = By.xpath("");
+    By oeevalue = By.xpath("//h2[@id='OEE_value']");
     public WebElement OEEValue () {return driver.findElement(oeevalue);}
-    By availabilityvalue = By.xpath("");
+    By availabilityvalue = By.xpath("//h2[@id='Availability_value']");
     public WebElement AvailabilityValue() {return driver.findElement(availabilityvalue);}
-    By performancevalue = By.xpath("");
+    By performancevalue = By.xpath("//h2[@id='Performance_value']");
     public WebElement PerformanceValue() {return driver.findElement(performancevalue);}
-    By qualityvalue = By.xpath("");
+    By qualityvalue = By.xpath("//h2[@id='Quality_value']");
     public WebElement QualityValue() {return driver.findElement(qualityvalue);}
 
     By oeetarget = By.xpath("");
@@ -72,7 +73,7 @@ public class CountryPage {
     public WebElement PT19() {return driver.findElement(pt19);}
     By pt23 = By.xpath("// h3[contains(text(),'PT23')]");
     public WebElement PT23() {return driver.findElement(pt23);}
-    By pt27 = By.xpath("// h3[contains(text(),'PT27')]");
+    By pt27 = By.xpath("// h3[contains(text(),'PT27')]"); //h3[contains(text(),'PT27')]
     public WebElement PT27() {return driver.findElement(pt27);}
     By pt12 = By.xpath("// h3[contains(text(),'PT12')]");
     public WebElement PT12() {return driver.findElement(pt12);}
@@ -85,6 +86,10 @@ public class CountryPage {
     By pt63 = By.xpath("//h3[contains(text(),'PT63')]");
     public WebElement PT63() {return driver.findElement(pt63);}
 
+
+
+    By tabplastic = By.xpath("//a[@id='country-Plastic-tab___BV_tab_button__']");
+    public WebElement Tabplastic() {return driver.findElement(tabplastic);}
     // Site Workcenters Production Information Charts
 
 
