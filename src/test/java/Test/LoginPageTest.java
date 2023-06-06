@@ -236,7 +236,7 @@ public class LoginPageTest extends Base {
         Assert.fail("Account Locked Test i Fail");
     }
 
-    @AfterMethod
+    @AfterTest
     public void afterMethod(){
         super.aftermethod();
     }
