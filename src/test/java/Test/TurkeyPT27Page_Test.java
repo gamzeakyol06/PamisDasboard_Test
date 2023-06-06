@@ -4,14 +4,12 @@ import Component.CountryPage;
 import Component.HomePage;
 import Component.WorkCenterPage;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
 
 public class TurkeyPT27Page_Test extends Base {
 
-    @BeforeMethod
+    @BeforeTest
     public void beforemethod() {
         super.beforemethod();
         driver.get(MAIN_PAGE_URL);
@@ -111,7 +109,7 @@ public class TurkeyPT27Page_Test extends Base {
         }
     }
 
-    @AfterMethod
+    @AfterTest
     public void aftermethod() {
         super.aftermethod();
     }
