@@ -14,7 +14,7 @@ import java.io.IOException;
 
 public class LoginPageTest extends Base {
 
-    @BeforeMethod
+    @BeforeTest
     public void BeforeMethod() throws IOException, InterruptedException {
         super.beforemethod ( );
         driver.get (MAIN_PAGE_URL);
