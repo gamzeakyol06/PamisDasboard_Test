@@ -39,6 +39,7 @@ public class LoginPageTest extends Base {
             e.printStackTrace ();
             Assert.fail ("Empty Username Check is Fail");
     }
+        Thread.sleep(5000);
     }
     @Test(description = "Empty Password")
     public void EmptyPassword() throws InterruptedException {
@@ -55,7 +56,8 @@ public class LoginPageTest extends Base {
         catch (Exception e) {
              Assert.fail ("Empty Password Check is Fail");
             }
-        }
+        Thread.sleep(5000);
+    }
     @Test(description = "Invalid Username")
     public void InvalidUsername() throws InterruptedException {
 
