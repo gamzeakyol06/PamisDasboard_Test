@@ -161,7 +161,7 @@ public class LoginPageTest extends Base {
             login.LoginButton().click();
             Thread.sleep (5000);
 
-            HomePage home = new HomePage (driver, wait);
+            HomePage home = new HomePage (driver);
             home.UserButton ( ).click ( );
             Thread.sleep (3000);
             home.LogOutButton ( ).click ( );

@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class CountryPage {
     WebDriver driver;
-    public CountryPage(WebDriver driver, WebDriverWait wait){
+    public CountryPage(WebDriver driver){
         this.driver = driver;
         PageFactory.initElements(this.driver, this);
     }

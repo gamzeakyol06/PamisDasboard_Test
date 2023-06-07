@@ -21,9 +21,9 @@ public class TurkeyPT27Page_Test extends Base {
     @Test
     public void Test_WorkcenterPT27OEEValue() throws InterruptedException {
         SoftAssert softassert = new SoftAssert();
-        HomePage main = new HomePage(driver, wait);
-        CountryPage country = new CountryPage(driver, wait);
-        WorkCenterPage workcenter = new WorkCenterPage(driver, wait);
+        HomePage main = new HomePage(driver);
+        CountryPage country = new CountryPage(driver);
+        WorkCenterPage workcenter = new WorkCenterPage(driver);
         try {
 
             Actions actions = new Actions(driver);
@@ -44,9 +44,9 @@ public class TurkeyPT27Page_Test extends Base {
     @Test
     public void Test_WorkcenterPT27AvailabilityValue() throws InterruptedException {
         SoftAssert softassert = new SoftAssert();
-        HomePage main = new HomePage(driver, wait);
-        CountryPage country = new CountryPage(driver, wait);
-        WorkCenterPage workcenter = new WorkCenterPage(driver, wait);
+        HomePage main = new HomePage(driver);
+        CountryPage country = new CountryPage(driver);
+        WorkCenterPage workcenter = new WorkCenterPage(driver);
         try {
 
             Actions actions = new Actions(driver);
@@ -67,9 +67,9 @@ public class TurkeyPT27Page_Test extends Base {
     @Test
     public void Test_WorkcenterPT27PerformanceValue() throws InterruptedException {
         SoftAssert softassert = new SoftAssert();
-        HomePage main = new HomePage(driver, wait);
-        CountryPage country = new CountryPage(driver, wait);
-        WorkCenterPage workcenter = new WorkCenterPage(driver, wait);
+        HomePage main = new HomePage(driver);
+        CountryPage country = new CountryPage(driver);
+        WorkCenterPage workcenter = new WorkCenterPage(driver);
         try {
 
             Actions actions = new Actions(driver);
@@ -90,9 +90,9 @@ public class TurkeyPT27Page_Test extends Base {
     @Test
     public void Test_WorkcenterPT27QualityValue() throws InterruptedException {
         SoftAssert softassert = new SoftAssert();
-        HomePage main = new HomePage(driver, wait);
-        CountryPage country = new CountryPage(driver, wait);
-        WorkCenterPage workcenter = new WorkCenterPage(driver, wait);
+        HomePage main = new HomePage(driver);
+        CountryPage country = new CountryPage(driver);
+        WorkCenterPage workcenter = new WorkCenterPage(driver);
         try {
 
             Actions actions = new Actions(driver);

@@ -12,7 +12,7 @@ import java.net.MalformedURLException;
 
 public class Base {
     protected static WebDriver driver;
-    protected  static WebDriverWait wait;
+
     public final static String MAIN_PAGE_URL = "https://pamisdashboard.niso.dev/login";
     public final static String TURKEY_PAGE_URL = "https://pamisdashboard.niso.dev/pamis-country/Turkey/id=34";
 

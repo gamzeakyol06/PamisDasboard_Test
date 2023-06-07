@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WorkCenterPage {
     WebDriver driver;
-    public WorkCenterPage(WebDriver driver,WebDriverWait wait){
+    public WorkCenterPage(WebDriver driver){
         this.driver = driver;
         PageFactory.initElements(this.driver, this);
     }
