@@ -5,7 +5,6 @@ import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
@@ -14,7 +13,6 @@ public class Base {
     protected  static WebDriverWait wait;
     public final static String MAIN_PAGE_URL = "https://pamisdashboard.niso.dev/login";
     public final static String TURKEY_PAGE_URL = "https://pamisdashboard.niso.dev/pamis-country/Turkey/id=34";
-
 
     public void beforemethod() {
         //System.setProperty("webdriver.chrome.driver", "src/main/driver/chromedriver.exe");
@@ -29,7 +27,7 @@ public class Base {
         chromeOptions.addArguments("--remote-allow-origins=*");
 
         driver = new ChromeDriver(chromeOptions);
-        System.setProperty("webdriver.chrome.driver","/src/main/driver/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","/src/main/driver/chromedriver_win32_x/chromedriver.exe");
         System.out.println(System.getProperty("webdriver.chrome.driver"));
 
         driver.manage().deleteAllCookies();
