@@ -29,7 +29,7 @@ public class Base {
         chromeOptions.addArguments("--remote-allow-origins=*");
 
         driver = new ChromeDriver(chromeOptions);
-        System.setProperty("webdriver.chrome.driver","src/main/driver/chromedriver_linux64/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","http://172.28.1.43:8080/job/PamisDashboardTest/ws/src/main/driver/chromedriver_win32_x/chromedriver.exe");
         System.out.println(System.getProperty("webdriver.chrome.driver"));
 
         driver.manage().deleteAllCookies();
