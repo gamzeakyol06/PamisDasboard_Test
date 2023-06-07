@@ -45,7 +45,7 @@ public class Base {
 */
        // wait = new WebDriverWait(driver, 3000);
         // For jenkins server github
-/*          ChromeOptions chromeOptions = new ChromeOptions();
+        /*  ChromeOptions chromeOptions = new ChromeOptions();
             chromeOptions.setCapability("browserName", "chrome");
             chromeOptions.setCapability("platformName", "LINUX");
             chromeOptions.addArguments("start-maximized");
