@@ -8,13 +8,15 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import java.net.MalformedURLException;
+
 public class Base {
     protected static WebDriver driver;
     protected  static WebDriverWait wait;
     public final static String MAIN_PAGE_URL = "https://pamisdashboard.niso.dev/login";
     public final static String TURKEY_PAGE_URL = "https://pamisdashboard.niso.dev/pamis-country/Turkey/id=34";
 
-    public void beforemethod() {
+    public void beforemethod()throws MalformedURLException, InterruptedException  {
         //System.setProperty("webdriver.chrome.driver", "src/main/driver/chromedriver.exe");
         //System.out.println(System.getProperty("webdriver.chrome.driver"));
 

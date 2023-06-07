@@ -7,10 +7,12 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
 
+import java.net.MalformedURLException;
+
 public class TurkeyPT27Page_Test extends Base {
 
     @BeforeTest
-    public void beforemethod() {
+    public void beforemethod() throws MalformedURLException, InterruptedException {
         super.beforemethod();
         driver.get(MAIN_PAGE_URL);
         super.loginmethod();
