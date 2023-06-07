@@ -36,14 +36,14 @@ public class Base {
         driver.manage().window().maximize();
         System.out.println("hello git");
 
-/*
+        /*
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("start-maximized");
         //chromeOptions.addArguments("--headless");
         //chromeOptions.addArguments("--no-sandbox");
         chromeOptions.addArguments("--remote-allow-origins=*");
 */
-       // wait = new WebDriverWait(driver, 3000);
+        // wait = new WebDriverWait(driver, 3000);
         // For jenkins server github
         /*  ChromeOptions chromeOptions = new ChromeOptions();
             chromeOptions.setCapability("browserName", "chrome");
