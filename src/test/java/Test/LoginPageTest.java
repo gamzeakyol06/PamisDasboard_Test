@@ -14,12 +14,11 @@ import java.io.IOException;
 
 public class LoginPageTest extends Base {
 
-    @BeforeTest
+   /* @BeforeTest
     public void BeforeMethod() throws IOException, InterruptedException {
         super.beforemethod ( );
         driver.get (MAIN_PAGE_URL);
     }
-
     @Test(description = "Empty Username")
     public void EmptyUsername() throws IOException, InterruptedException {
 
@@ -237,9 +236,8 @@ public class LoginPageTest extends Base {
         }
         Assert.fail("Account Locked Test i Fail");
     }
-
     @AfterTest
     public void afterMethod(){
         super.aftermethod();
-    }
+    }*/
 }

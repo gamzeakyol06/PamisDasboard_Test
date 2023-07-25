@@ -4,7 +4,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class CountryPage {
     WebDriver driver;
@@ -59,38 +58,34 @@ public class CountryPage {
     public WebElement QualityTarget() {return driver.findElement(qualitytarget);}
 
     // Site WorkCenters
-    By pt7 = By.xpath("//h3[contains(text(),'PT7')]");
+    By pt7 = By.xpath("//span[contains(text(),'PT7')]");
     public WebElement PT7() {return driver.findElement(pt7);}
-    By pt9 = By.xpath("//h3[contains(text(),'PT9')]");
+    By pt9 = By.xpath("//span[contains(text(),'PT9')]");
     public WebElement PT9() {return driver.findElement(pt9);}
-    By pt11 = By.xpath("//h3[contains(text(),'PT11')]");
+    By pt11 = By.xpath("//span[contains(text(),'PT11')]");
     public WebElement PT11() {return driver.findElement(pt11);}
-    By pt13 = By.xpath("// h3[contains(text(),'PT13')]");
+    By pt13 = By.xpath("// span[contains(text(),'PT13')]");
     public WebElement PT13() {return driver.findElement(pt13);}
-    By pt15 = By.xpath("// h3[contains(text(),'PT15')]");
+    By pt15 = By.xpath("// span[contains(text(),'PT15')]");
     public WebElement PT15() {return driver.findElement(pt15);}
-    By pt19 = By.xpath("// h3[contains(text(),'PT19')]");
+    By pt19 = By.xpath("// span[contains(text(),'PT19')]");
     public WebElement PT19() {return driver.findElement(pt19);}
-    By pt23 = By.xpath("// h3[contains(text(),'PT23')]");
+    By pt23 = By.xpath("// span[contains(text(),'PT23')]");
     public WebElement PT23() {return driver.findElement(pt23);}
-    By pt27 = By.xpath("// h3[contains(text(),'PT27')]"); //h3[contains(text(),'PT27')]
+    By pt27 = By.xpath("// span[contains(text(),'PT27')]"); //span[contains(text(),'PT27')]
     public WebElement PT27() {return driver.findElement(pt27);}
-    By pt12 = By.xpath("// h3[contains(text(),'PT12')]");
+    By pt12 = By.xpath("// span[contains(text(),'PT12')]");
     public WebElement PT12() {return driver.findElement(pt12);}
-    By pt20 = By.xpath("//h3[contains(text(),'PT20')]");
+    By pt20 = By.xpath("//span[contains(text(),'PT20')]");
     public WebElement PT20() {return driver.findElement(pt20);}
-    By pt24 = By.xpath("//h3[contains(text(),'PT24')]");
+    By pt24 = By.xpath("//span[contains(text(),'PT24')]");
     public WebElement PT24() {return driver.findElement(pt24);}
-    By pt44 = By.xpath("//h3[contains(text(),'PT44')]");
+    By pt44 = By.xpath("//span[contains(text(),'PT44')]");
     public WebElement PT44() {return driver.findElement(pt44);}
-    By pt63 = By.xpath("//h3[contains(text(),'PT63')]");
+    By pt63 = By.xpath("//span[contains(text(),'PT63')]");
     public WebElement PT63() {return driver.findElement(pt63);}
-
-
 
     By tabplastic = By.xpath("//a[@id='country-Plastic-tab___BV_tab_button__']");
     public WebElement Tabplastic() {return driver.findElement(tabplastic);}
     // Site Workcenters Production Information Charts
-
-
 }

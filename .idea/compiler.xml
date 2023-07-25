@@ -7,8 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="PamisUI_Test" />
-        <module name="PamisDasboardUI_Test" />
+        <module name="PamisDashboard_Test" />
         <module name="PamisDasboard_Test" />
+        <module name="PamisDasboardUI_Test" />
       </profile>
     </annotationProcessing>
   </component>

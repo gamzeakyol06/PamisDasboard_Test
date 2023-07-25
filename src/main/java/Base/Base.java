@@ -5,7 +5,6 @@ import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import java.net.MalformedURLException;
@@ -20,21 +19,31 @@ public class Base {
         //System.setProperty("webdriver.chrome.driver", "src/main/driver/chromedriver.exe");
         //System.out.println(System.getProperty("webdriver.chrome.driver"));
 
+/*
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.setCapability("browserName","chrome");
-        chromeOptions.setCapability("platformName","LINUX");
+        //chromeOptions.setCapability("platformName","LINUX");
         chromeOptions.addArguments("start-maximized");
         chromeOptions.addArguments("--headless");
         chromeOptions.addArguments("--no-sandbox");
         chromeOptions.addArguments("--remote-allow-origins=*");
 
         driver = new ChromeDriver(chromeOptions);
-        System.setProperty("webdriver.chrome.driver","/src/main/driver/chromedriver");
+        System.setProperty("webdriver.chrome.driver","/src/main/driver/chromedriver.exe");
         System.out.println(System.getProperty("webdriver.chrome.driver"));
+*/
+
+        ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.addArguments("--remote-allow-origins=*");
+        chromeOptions.addArguments("--disable-notifications");
+
+        System.setProperty("webdriver.chrome.driver","src/main/driver/chromedriver.exe");
+        System.out.println(System.getProperty("webdriver.chrome.driver"));
+        driver = new ChromeDriver(chromeOptions);
+        driver.manage().window().maximize();
 
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
-        System.out.println("hello git");
 
         /*
         ChromeOptions chromeOptions = new ChromeOptions();
@@ -80,11 +89,11 @@ public class Base {
             System.out.println(driver.getTitle());
             LoginPageMessage mlogin = new LoginPageMessage (driver);
             Assert.assertEquals (mlogin.SuccessLogin(),(mlogin.Content_SuccessLogin));
-            System.out.println ("Trying Success Login is Pass");
+            System.out.println ("Success Login");
         }
         catch(Exception e){
             e.printStackTrace ();
-            Assert.fail ("Trying Success Login is Fail");
+            Assert.fail ("Login is Fail");
         }
     }
 
