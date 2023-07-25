@@ -86,11 +86,7 @@ public class CountryPage {
     By pt63 = By.xpath("//h3[contains(text(),'PT63')]");
     public WebElement PT63() {return driver.findElement(pt63);}
 
-
-
     By tabplastic = By.xpath("//a[@id='country-Plastic-tab___BV_tab_button__']");
     public WebElement Tabplastic() {return driver.findElement(tabplastic);}
     // Site Workcenters Production Information Charts
-
-
 }
