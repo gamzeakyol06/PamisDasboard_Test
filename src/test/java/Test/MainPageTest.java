@@ -3,10 +3,8 @@ package Test;
 import Base.Base;
 import Component.CountryPage;
 import Component.HomePage;
-import Component.LoginPage;
 import Component.WorkCenterPage;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -19,28 +17,28 @@ public class MainPageTest extends Base {
         super.beforemethod ( );
         driver.get (MAIN_PAGE_URL);
     }
-    @Test
-    public void HomePage () throws InterruptedException {
-        try {
-
-            LoginPage login = new LoginPage (driver);
-            System.out.println(driver.getTitle());
-            login.Username ( ).sendKeys ("akyolg");
-            Thread.sleep (3000);
-            login.Password ( ).sendKeys ("Niso.2022!");
-            Thread.sleep (3000);
-            login.LoginButton ( ).click ( );
-            Thread.sleep (3000);
-            System.out.println(driver.getTitle());
-            Thread.sleep(6000);
-            System.out.println ("Success");
-
-        }
-        catch(Exception e){
-            e.printStackTrace ();
-            Assert.fail ("Fail");
-        }
-    }
+//    @Test
+//    public void HomePage () throws InterruptedException {
+//        try {
+//
+//            LoginPage login = new LoginPage (driver);
+//            System.out.println(driver.getTitle());
+//            login.Username ( ).sendKeys ("akyolg");
+//            Thread.sleep (3000);
+//            login.Password ( ).sendKeys ("Niso.2022!");
+//            Thread.sleep (3000);
+//            login.LoginButton ( ).click ( );
+//            Thread.sleep (3000);
+//            System.out.println(driver.getTitle());
+//            Thread.sleep(6000);
+//            System.out.println ("Success");
+//
+//        }
+//        catch(Exception e){
+//            e.printStackTrace ();
+//            Assert.fail ("Fail");
+//        }
+//    }
     @Test
     public void CountriesTest() throws InterruptedException {
         loginmethod();

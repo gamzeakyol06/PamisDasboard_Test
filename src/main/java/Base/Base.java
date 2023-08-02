@@ -47,8 +47,6 @@ public class Base {
 
 
 
-
-
         /*
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.setCapability("browserName","chrome");
