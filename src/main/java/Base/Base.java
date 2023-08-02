@@ -45,7 +45,12 @@ public class Base {
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
 
-
+//        System.setProperty("webdriver.chrome.driver","src/main/driver/chromedriver.exe");
+//        System.out.println(System.getProperty("webdriver.chrome.driver"));
+//
+//
+//        driver = new ChromeDriver();
+//        driver.manage().window().maximize();
 
 
 
