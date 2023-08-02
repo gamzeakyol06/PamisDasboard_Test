@@ -100,7 +100,7 @@ public class Base {
             login.Password ( ).sendKeys ("Niso.2022!");
             Thread.sleep (3000);
             login.LoginButton ( ).click ( );
-            Thread.sleep (3000);
+            Thread.sleep (6000);
             System.out.println(driver.getTitle());
 //            LoginPageMessage mlogin = new LoginPageMessage (driver);
 //            Assert.assertEquals (mlogin.SuccessLogin(),(mlogin.Content_SuccessLogin));
