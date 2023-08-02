@@ -15,7 +15,7 @@ public class HomePage {
         public WebElement UserButton() {return driver.findElement(userbutton);}
         By logoutbttn = By.xpath("//span[contains(text(),'Logout')]");
         public WebElement LogOutButton() {return driver.findElement(logoutbttn);}
-        By workcenterbttn = By.xpath("//span[contains(text(),'Workcenter')]");
+        By workcenterbttn = By.xpath("//span[contains(text(),'Workcenter')]");  //h2[contains(text(),'Workcenter')]
         public WebElement WorkCenterButton() {return driver.findElement(workcenterbttn);}
         By generalbttn = By.xpath("//span[contains(text(),'General')]");
         public WebElement GeneralButton() {return driver.findElement(generalbttn);}
@@ -35,4 +35,7 @@ public class HomePage {
         By breakdown = By.xpath("//span[contains(text(),'Breakdown Machine')]");
         public WebElement Home() {return driver.findElement(home);}
         By home = By.xpath("//span[contains(text(),'Home')]");
+
+        public WebElement WorkCenterText() {return driver.findElement(workcentertext);}
+        By workcentertext = By.xpath("//h2[contains(text(),'Workcenter')]");
     }

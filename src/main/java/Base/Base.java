@@ -5,6 +5,7 @@ import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 
 import java.net.MalformedURLException;
@@ -99,7 +100,10 @@ public class Base {
             Thread.sleep (3000);
             login.Password ( ).sendKeys ("Niso.2022!");
             Thread.sleep (3000);
-            login.LoginButton ( ).click ( );
+            Actions actions = new Actions(driver);
+            Thread.sleep(4000);
+            actions.moveToElement(login.LoginButton ( )).click().build().perform();
+            //login.LoginButton ( ).click ( );
             Thread.sleep (6000);
             System.out.println(driver.getTitle());
 //            LoginPageMessage mlogin = new LoginPageMessage (driver);
