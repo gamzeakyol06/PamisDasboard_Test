@@ -26,10 +26,10 @@ public class HomePage {
         public WebElement Leaflet() {return driver.findElement(leaflet);}
 
         public WebElement TurkeyButton() {return driver.findElement(turkey);}
-        By turkey = By.xpath("/html[1]/body[1]/div[2]/div[1]/div[1]/ul[1]/ul[1]/li[4]/a[1]");
+        By turkey = By.xpath("//body/div[@id='app']/div[1]/div[1]/ul[1]/ul[1]/li[4]/a[1]");
         //By turkey = By.xpath("//span[contains(text(),'Turkey')]");
         public WebElement PlasticPlant() {return driver.findElement(plastic);}
-        By plastic = By.xpath("/html[1]/body[1]/div[2]/div[1]/div[1]/ul[1]/ul[1]/li[4]/ul[1]/li[1]/a[1]/span[1]");
+        By plastic = By.xpath("//body/div[@id='app']/div[1]/div[1]/ul[1]/ul[1]/li[4]/ul[1]/li[1]/a[1]");
         //By plastic = By.xpath("//span[contains(text(),'Plastics Plant')]");
         public WebElement BreakdownButton() {return driver.findElement(breakdown);}
         By breakdown = By.xpath("//span[contains(text(),'Breakdown Machine')]");
