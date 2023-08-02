@@ -36,6 +36,7 @@ public class Base {
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("--remote-allow-origins=*");
         chromeOptions.addArguments("--disable-notifications");
+        chromeOptions.setCapability("platformName","LINUX");
 
         System.setProperty("webdriver.chrome.driver","src/main/driver/chromedriver.exe");
         System.out.println(System.getProperty("webdriver.chrome.driver"));
