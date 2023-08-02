@@ -34,14 +34,17 @@ public class Base {
 */
 
         ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.addArguments("--remote-allow-origins=*");
-        chromeOptions.addArguments("--disable-notifications");
+        chromeOptions.setCapability("browserName","chrome");
         chromeOptions.setCapability("platformName","LINUX");
+        chromeOptions.addArguments("start-maximized");
+        chromeOptions.addArguments("--headless");
+        chromeOptions.addArguments("--no-sandbox");
+        chromeOptions.addArguments("--remote-allow-origins=*");
 
-        System.setProperty("webdriver.chrome.driver","src/main/driver/chromedriver.exe");
-        System.out.println(System.getProperty("webdriver.chrome.driver"));
+
         driver = new ChromeDriver(chromeOptions);
-        driver.manage().window().maximize();
+        System.setProperty("webdriver.chrome.driver","/src/main/driver/chromedriver");
+        System.out.println(System.getProperty("webdriver.chrome.driver"));
 
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
