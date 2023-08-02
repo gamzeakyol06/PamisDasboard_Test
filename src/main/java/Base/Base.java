@@ -1,4 +1,5 @@
 package Base;
+
 import Component.LoginPage;
 import Component.LoginPageMessage;
 import org.apache.commons.lang3.RandomStringUtils;
@@ -16,23 +17,39 @@ public class Base {
     public final static String TURKEY_PAGE_URL = "https://pamisdashboard.niso.dev/pamis-country/Turkey/id=34";
 
     public void beforemethod()throws MalformedURLException, InterruptedException  {
-        //System.setProperty("webdriver.chrome.driver", "src/main/driver/chromedriver.exe");
-        //System.out.println(System.getProperty("webdriver.chrome.driver"));
 
-/*
+//        ChromeOptions chromeOptions = new ChromeOptions();
+//        chromeOptions.addArguments("--remote-allow-origins=*");
+//        chromeOptions.addArguments("--disable-notifications");
+//
+//        System.setProperty("webdriver.chrome.driver","src/main/driver/chromedriver.exe");
+//        System.out.println(System.getProperty("webdriver.chrome.driver"));
+//        driver = new ChromeDriver(chromeOptions);
+//        driver.manage().deleteAllCookies();
+//        driver.manage().window().maximize();
+
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.setCapability("browserName","chrome");
-        //chromeOptions.setCapability("platformName","LINUX");
+        chromeOptions.setCapability("platformName","LINUX");
         chromeOptions.addArguments("start-maximized");
         chromeOptions.addArguments("--headless");
         chromeOptions.addArguments("--no-sandbox");
         chromeOptions.addArguments("--remote-allow-origins=*");
 
-        driver = new ChromeDriver(chromeOptions);
-        System.setProperty("webdriver.chrome.driver","/src/main/driver/chromedriver.exe");
-        System.out.println(System.getProperty("webdriver.chrome.driver"));
-*/
 
+        driver = new ChromeDriver(chromeOptions);
+
+        System.setProperty("webdriver.chrome.driver","/src/main/driver/chromedriver");
+        System.out.println(System.getProperty("webdriver.chrome.driver"));
+
+        driver.manage().deleteAllCookies();
+        driver.manage().window().maximize();
+
+
+
+
+
+        /*
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.setCapability("browserName","chrome");
         chromeOptions.setCapability("platformName","LINUX");
@@ -48,7 +65,7 @@ public class Base {
 
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
-
+*/
         /*
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("start-maximized");

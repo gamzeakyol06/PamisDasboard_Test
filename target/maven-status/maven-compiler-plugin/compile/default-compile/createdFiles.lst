@@ -1,0 +1,7 @@
+Component\LoginPageMessage.class
+Component\LoginPage.class
+Component\WorkCenterPage.class
+Component\BreakdownPage.class
+Base\Base.class
+Component\CountryPage.class
+Component\HomePage.class
