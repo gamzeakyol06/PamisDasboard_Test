@@ -42,15 +42,17 @@ public class MainPageTest extends Base {
     @Test
     public void CountriesTest() throws InterruptedException {
         loginmethod();
-        System.out.printf("ok");
+
+        System.out.printf("ok\n");
         HomePage home = new HomePage(driver);
         CountryPage country = new CountryPage(driver);
         WorkCenterPage workcenter = new WorkCenterPage(driver);
         Actions actions = new Actions(driver);
         Thread.sleep(4000);
-        //actions.moveToElement(home.TurkeyButton()).click().build().perform();
+        //System.out.printf(home.WorkCenterText().getText());
+        actions.moveToElement(home.TurkeyButton()).click().build().perform();
         Thread.sleep(4000);
-        home.TurkeyButton().click();
+        //home.TurkeyButton().click();
         Thread.sleep(3000);
         home.PlasticPlant().click();
         Thread.sleep(3000);
