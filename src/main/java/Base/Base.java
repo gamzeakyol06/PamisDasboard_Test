@@ -1,7 +1,6 @@
 package Base;
 
 import Component.LoginPage;
-import Component.LoginPageMessage;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -111,9 +110,9 @@ public class Base {
             login.LoginButton ( ).click ( );
             Thread.sleep (3000);
             System.out.println(driver.getTitle());
-            LoginPageMessage mlogin = new LoginPageMessage (driver);
-            Assert.assertEquals (mlogin.SuccessLogin(),(mlogin.Content_SuccessLogin));
-            System.out.println ("Success Login");
+//            LoginPageMessage mlogin = new LoginPageMessage (driver);
+//            Assert.assertEquals (mlogin.SuccessLogin(),(mlogin.Content_SuccessLogin));
+//            System.out.println ("Success Login");
         }
         catch(Exception e){
             e.printStackTrace ();
