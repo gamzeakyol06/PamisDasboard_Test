@@ -15,7 +15,8 @@ public class LoginPage {
     public WebElement Username() {return driver.findElement(username);}
     By password = By.xpath("//input[@id='login-password']");
     public WebElement Password() {return driver.findElement(password);}
-    By loginbttn = By.xpath("//input[@id='login-button']");
+    //By loginbttn = By.xpath("//input[@id='login-button']");
+    By loginbttn = By.xpath("//button[contains(text(),'Sign in')]");
     public WebElement LoginButton() {return driver.findElement(loginbttn);}
-    //button[contains(text(),'Sign in')]
+
 }
