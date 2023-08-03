@@ -50,7 +50,7 @@ public class MainPageTest extends Base {
         Actions actions = new Actions(driver);
         Thread.sleep(10000);
         System.out.printf("ok");
-        driver.getPageSource();
+        System.out.println(driver.getPageSource());
         //System.out.printf(home.WorkCenterText().getText());
         actions.moveToElement(home.TurkeyButton()).click().build().perform();
         Thread.sleep(4000);
