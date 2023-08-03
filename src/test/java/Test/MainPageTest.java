@@ -43,7 +43,6 @@ public class MainPageTest extends Base {
     public void CountriesTest() throws InterruptedException {
         loginmethod();
 
-
         HomePage home = new HomePage(driver);
         CountryPage country = new CountryPage(driver);
         WorkCenterPage workcenter = new WorkCenterPage(driver);
