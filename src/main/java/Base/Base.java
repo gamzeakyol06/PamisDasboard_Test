@@ -2,6 +2,7 @@ package Base;
 
 import Component.LoginPage;
 import org.apache.commons.lang3.RandomStringUtils;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -41,7 +42,9 @@ public class Base {
         System.out.println(System.getProperty("webdriver.chrome.driver"));
 
         driver.manage().deleteAllCookies();
-        driver.manage().window().maximize();
+        Dimension d = new Dimension(1382,744);
+        //Resize the current window to the given dimension
+        driver.manage().window().setSize(d);
 
 
         /*

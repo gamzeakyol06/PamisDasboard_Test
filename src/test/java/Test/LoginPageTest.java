@@ -9,8 +9,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.testng.Assert;
 import org.testng.annotations.*;
-import java.io.File;
-import java.io.IOException;
+
 
 public class LoginPageTest extends Base {
 
