@@ -42,7 +42,7 @@ public class Base {
         System.out.println(System.getProperty("webdriver.chrome.driver"));
 
         driver.manage().deleteAllCookies();
-        Dimension d = new Dimension(1382,744);
+        Dimension d = new Dimension(1920,1080);
         //Resize the current window to the given dimension
         driver.manage().window().setSize(d);
 
